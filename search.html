@@ -64,8 +64,8 @@
                                             required>
                                             <option value=""></option>
                                             <option value="hemoglobin">Hemoglobin</option>
-                                            <option value="whiteBloodCells" disabled>White Blood Cells</option>
-                                            <option value="platelets" disabled>Platelets</option>
+                                            <option value="whiteBloodCells">White Blood Cells</option>
+                                            <option value="platelets">Platelets</option>
                                         </select>
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                         anyone else.</small> -->
@@ -137,11 +137,18 @@
                                 </div>
 
 
-                                <div id="resultTables" style="display: none;">
+
+
+
+
+
+
+
+                                <div id="hemoglobinTables" class="resultsTable" style="display: none;">
                                     <div class="h5 text-center font-weight-bold">Hemoglobin (g/dL)</div>
                                     
                                     <div class="h5">Male Reference Intervals</div>
-                                    <table id="maleRI" class="table table-responsive-lg border shadow">
+                                    <table id="" class="table table-responsive-lg border shadow RItable">
                                         <thead class="bg-light">
                                             <tr>
                                                 <th>Age</th>
@@ -195,7 +202,7 @@
 
 
                                     <div class="h5 mt-5">Female Reference Intervals</div>
-                                    <table id="femaleRI" class="table table-responsive-lg border shadow">
+                                    <table class="table table-responsive-lg border shadow RItable">
                                         <thead class="bg-light">
                                             <tr>
                                                 <th>Age</th>
@@ -243,6 +250,240 @@
                                     </tfoot> -->
                                     </table>
                                 </div>
+								
+								
+								
+								
+								
+								
+								<div id="wbcTables" class="resultsTable" style="display: none;">
+                                    <div class="h5 text-center font-weight-bold">White Blood Cells (x10^9/L)</div>
+                                    
+                                    <div class="h5">Male Reference Intervals</div>
+                                    <table id="" class="table table-responsive-lg border shadow RItable">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th>Age</th>
+                                                <th>Lower Reference Limit</th>
+                                                <th>Upper Reference Limit</th>
+                                                <th>Analyzer</th>
+                                                <th>Sample Size</th>
+                                                <th>Country</th>
+                                                <th>Link to Publication</th>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0.5 - 4.9 yrs</td>
+                                                <td>5.1</td>
+                                                <td>17.6</td>
+                                                <td></td>
+                                                <td>499 </td>
+                                                <td>Ghana</td>
+                                                <td><a href="https://doi.org/10.1111/tmi.13009">
+                                                    DOI: 10.4269/ajtmh.13-0098
+                                                </a></td>
+                                            </tr>
+                                            <tr>											
+                                                <td>13 - 17 yrs</td>
+                                                <td>3.3</td>
+                                                <td>8.3</td>
+                                                <td></td>
+                                                <td>76</td>
+                                                <td>Kenya</td>
+                                                <td><a href="https://doi.org/10.1371/journal.pone.0123140">
+                                                    https://doi.org/10.1371/journal.pone.0123140
+                                                </a></td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- <tfoot>
+                                        <th>Age</th>
+                                        <th>Lower Reference Limit</th>
+                                        <th>Upper Reference Limit</th>
+                                        <th>Analyser</th>
+                                        <th>Sample Size</th>
+                                        <th>Country</th>
+                                        <th>Link to Publication</th>
+                                    </tfoot> -->
+                                    </table>
+
+
+
+
+
+
+                                    <div class="h5 mt-5">Female Reference Intervals</div>
+                                    <table class="table table-responsive-lg border shadow RItable">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th>Age</th>
+                                                <th>Lower Reference Limit</th>
+                                                <th>Upper Reference Limit</th>
+                                                <th>Analyser</th>
+                                                <th>Sample Size</th>
+                                                <th>Country</th>
+                                                <th>Link to Publication</th>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0.5 - 4.9 yrs</td>
+                                                <td>5.1</td>
+                                                <td>17.6</td>
+                                                <td></td>
+                                                <td>499 </td>
+                                                <td>Ghana</td>
+                                                <td><a href="https://doi.org/10.1111/tmi.13009">
+                                                    DOI: 10.4269/ajtmh.13-0098
+                                                </a></td>
+                                            </tr>
+                                            <tr>											
+                                                <td>13 - 17 yrs</td>
+                                                <td>3.3</td>
+                                                <td>8.3</td>
+                                                <td></td>
+                                                <td>57</td>
+                                                <td>Kenya</td>
+                                                <td><a href="https://doi.org/10.1371/journal.pone.0123140">
+                                                    https://doi.org/10.1371/journal.pone.0123140
+                                                </a></td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- <tfoot>
+                                        <th>Age</th>
+                                        <th>Lower Reference Limit</th>
+                                        <th>Upper Reference Limit</th>
+                                        <th>Analyser</th>
+                                        <th>Sample Size</th>
+                                        <th>Country</th>
+                                        <th>Link to Publication</th>
+                                    </tfoot> -->
+                                    </table>
+                                </div>
+								
+								
+								
+								
+								
+								
+								
+								
+								<div id="plateletsTables" class="resultsTable" style="display: none;">
+                                    <div class="h5 text-center font-weight-bold">Platelets (x10^9/L)</div>
+                                    
+                                    <div class="h5">Male Reference Intervals</div>
+                                    <table id="" class="table table-responsive-lg border shadow RItable">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th>Age</th>
+                                                <th>Lower Reference Limit</th>
+                                                <th>Upper Reference Limit</th>
+                                                <th>Analyzer</th>
+                                                <th>Sample Size</th>
+                                                <th>Country</th>
+                                                <th>Link to Publication</th>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0.5 - 4.9 yrs</td>
+                                                <td>110</td>
+                                                <td>637</td>
+                                                <td></td>
+                                                <td>498 </td>
+                                                <td>Ghana</td>
+                                                <td><a href="https://doi.org/10.1111/tmi.13009">
+                                                    DOI: 10.4269/ajtmh.13-0098
+                                                </a></td>
+                                            </tr>
+                                            <tr>				
+                                                <td>16 - 17	</td>
+                                                <td>112</td>
+                                                <td>474</td>
+                                                <td></td>
+                                                <td>110</td>
+                                                <td>Kenya</td>
+                                                <td><a href="https://doi.org/10.1371/journal.pone.0123140">
+                                                    https://doi.org/10.1371/journal.pone.0123140
+                                                </a></td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- <tfoot>
+                                        <th>Age</th>
+                                        <th>Lower Reference Limit</th>
+                                        <th>Upper Reference Limit</th>
+                                        <th>Analyser</th>
+                                        <th>Sample Size</th>
+                                        <th>Country</th>
+                                        <th>Link to Publication</th>
+                                    </tfoot> -->
+                                    </table>
+
+
+
+
+
+
+                                    <div class="h5 mt-5">Female Reference Intervals</div>
+                                    <table class="table table-responsive-lg border shadow RItable">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th>Age</th>
+                                                <th>Lower Reference Limit</th>
+                                                <th>Upper Reference Limit</th>
+                                                <th>Analyser</th>
+                                                <th>Sample Size</th>
+                                                <th>Country</th>
+                                                <th>Link to Publication</th>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0.5 - 4.9 yrs</td>
+                                                <td>110</td>
+                                                <td>637</td>
+                                                <td></td>
+                                                <td>498 </td>
+                                                <td>Ghana</td>
+                                                <td><a href="https://doi.org/10.1111/tmi.13009">
+                                                    DOI: 10.4269/ajtmh.13-0098
+                                                </a></td>
+                                            </tr>
+                                            <tr>					
+                                                <td>16 - 17	</td>
+                                                <td>126</td>
+                                                <td>448</td>
+                                                <td></td>
+                                                <td>132</td>
+                                                <td>Kenya</td>
+                                                <td><a href="https://doi.org/10.1371/journal.pone.0123140">
+                                                    https://doi.org/10.1371/journal.pone.0123140
+                                                </a></td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- <tfoot>
+                                        <th>Age</th>
+                                        <th>Lower Reference Limit</th>
+                                        <th>Upper Reference Limit</th>
+                                        <th>Analyser</th>
+                                        <th>Sample Size</th>
+                                        <th>Country</th>
+                                        <th>Link to Publication</th>
+                                    </tfoot> -->
+                                    </table>
+                                </div>
+								
+								
+								
+								
+								
+								
+								
+								
                             </div>
                         </div>
                     </div>
@@ -299,6 +540,14 @@ Country (will send you a list of the countries)
 <script src="public/js/select2.min.js"></script>
 <script src="public/js/datatables.min.js"></script>
 <script>
+let ini = {
+"#hemoglobinTables":false,
+"#wbcTables":false,
+"#plateletsTables":false
+}
+	let hemoIni = false;
+	let wbcIni = false;
+	let plateIni = false;
     $(document).ready(function () {
         $('.select2-base').select2();
     });
@@ -306,8 +555,25 @@ Country (will send you a list of the countries)
     $("#testForm").submit(function (e) {
         e.preventDefault();
         $("#placeholder").hide();
-        $("#resultTables").show();
-        new DataTable('#maleRI', {
+		let setId="";
+		switch($("#testName").val()){
+		case "hemoglobin":
+			setId="#hemoglobinTables"
+			break;
+		case "whiteBloodCells":
+			setId="#wbcTables"
+			break;
+		case "platelets":
+			setId="#plateletsTables"
+			break;
+		default:
+			setId="#hemoglobinTables"
+			break;
+		}
+		$(".resultsTable").hide();
+        $(setId).show();
+		if(!ini[setId]){
+		new DataTable(`${setId} .RItable`, {
             columnDefs: [
                 { orderable: false, targets: [1, 2, 6] }
             ],
@@ -317,16 +583,10 @@ Country (will send you a list of the countries)
             // scrollY: 300,
             // paging: false
         });
-        new DataTable('#femaleRI', {
-            columnDefs: [
-                { orderable: false, targets: [1, 2, 6] }
-            ],
-            "lengthChange":false,
-            "searching": false
-            // order: [[1, 'asc']]
-            // scrollY: 300,
-            // paging: false
-        });
+		ini[setId]=true;
+		}
+		
+        
         return false;
     });
 </script>
