@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css" />
     <link rel="stylesheet" href="public/css/datatables.min.css" />
     <link rel="stylesheet" href="public/css/style.css" />
+	<style>
+	li{
+		font-size: 1.2em;
+		margin-bottom:10px;
+	}
+	</style>
 </head>
 
 <!-- 
@@ -41,14 +47,14 @@ Search Database
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ml-md-5">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="search.html">Search</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="publications.html">Publication References</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Publication References</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
@@ -81,36 +87,16 @@ Search Database
 
 
     <section id="main">
-        <div class="container rip-stretch-heigth">
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="mr-md-0 ml-md-auto mx-auto rip-w-75">
-                        <img src="public/img/ripaap_logo.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-12 col-md-8">
-                    <div class="my-2 my-lg-5 rip-mob-center">
-                        <span class="display-1 font-weight-bold">
-                            RIPAAP
-                        </span><br>
-                        <span class="h4">Reference Intervals for Pediatric and Adult African Populations</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="w-100 text-center my-4">
-                <a href="search.html" class="btn btn-danger rip-shadow w-75 mx-auto">Search Database</a>
-            </div>
-
-            <p class="text-justify rip-w-75 h5 mx-auto mt-5 mb-4">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum."
-            </p>
-        </div>
+        <div class="container rip-stretch-heigth  pt-3">
+		<div class="my-4">
+		<h1>Publications</h1>
+		</div>
+            
+		<ol id="pubListing">
+		</ol>
+			
+		</div>
+			
     </section>
 
 
@@ -194,6 +180,15 @@ Search Database
 <script src="public/js/datatables.min.js"></script>
 <script>
     $(document).ready(function () {
+	
+	for(let i=1;i<11;i++){
+		const node = document.createElement("li");
+		node.innerHTML=`Author1Sname, A. & Author2Sname B. (2013). 
+		Publication ${i} Title: Publication ${i} Subtitle. Journal Name,13, 1442-1452.
+		<a href="https://doi.org/10.1177/104973232546984">https://doi.org/10.1177/104973232546984<a/>`;
+
+document.getElementById("pubListing").appendChild(node);
+	}
 
     });
 </script>
